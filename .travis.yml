@@ -1,6 +1,6 @@
 dist: xenial
 os: linux
-language:  node.js
+language:  node_js
 services: 
   - docker
 
