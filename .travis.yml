@@ -1,8 +1,9 @@
 dist: xenial
 os: linux
-language:  node_js
 services: 
   - docker
+
+before_deploy: "echo 'pidaras!'"  
 
 deploy:
   provider: elasticbeanstalk
@@ -16,4 +17,6 @@ deploy:
   bucket_path: docker-react
   on:
     branch: master
+
+after_deploy: "echo 'pidarasina!'"    
 
