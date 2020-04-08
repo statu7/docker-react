@@ -1,8 +1,5 @@
 dist: xenial
 os: linux
-language: python  
-python: 
-  - "3.6"
 services: 
   - docker
 
@@ -15,12 +12,12 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-    secure: $AWS_SECRET_KEY
-  region: us-east-2
-  app: docker-react
-  env: DockerReact-env
-  bucket: elasticbeanstalk-us-east-2-771724246480
-  bucket_path: docker-react
+    secure: "$AWS_SECRET_KEY"
+  region: "us-east-2"
+  app: "docker-react"
+  env: "DockerReact-env"
+  bucket: "elasticbeanstalk-us-east-2-771724246480"
+  bucket_path: "docker-react"
   on:
     branch: master
 
