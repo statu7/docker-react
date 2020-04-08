@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+  - gem install rake
   - docker build -t statu7/docker-react -f Dockerfile.dev .
 
 before_deploy: "echo 'pidaras!'"  
