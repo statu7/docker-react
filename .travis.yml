@@ -10,10 +10,6 @@ before_install:
 script:
   - docker run -e CI=true statu7/docker-react npm run test -- --coverage 
 
-after_failure: "program step was not seccessfully!"
-after_success: "all programm steps are successfully! now its time fo deploy!"   
-
-
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY

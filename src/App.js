@@ -17,6 +17,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React and enjoy your life lovly boy and find your girl!
+          This is the End of chapter 7.
+          Chag Pessach Sameach *
         </a>
       </header>
     </div>
